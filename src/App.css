@@ -1,0 +1,24 @@
+/*
+ * App.css
+ * Estilos propios que complementan a Bootstrap (requerimiento b).
+ * Bootstrap resuelve el 90% del diseno; aqui solo afinamos detalles.
+ */
+
+/* Titulo de la barra superior */
+.navbar-brand {
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+}
+
+/* Las filas de la lista se resaltan al pasar el mouse */
+.list-group-item {
+  transition: background-color 0.2s ease;
+}
+.list-group-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* El pie de pagina siempre queda abajo aunque haya pocas tareas */
+footer {
+  font-size: 0.9rem;
+}
