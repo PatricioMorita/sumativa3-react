@@ -6,8 +6,9 @@ import Card from 'react-bootstrap/Card'
 import Image from 'react-bootstrap/Image'
 import Button from 'react-bootstrap/Button'
 
-// Imagen corporativa incluida como recurso del proyecto (Vite la empaqueta)
-import imagenCorporativa from '../assets/imagen-corporativa.jpg'
+// Imagen corporativa (logo de GrezUlloa) incluida como recurso del
+// proyecto; Vite la empaqueta en el build.
+import logoGrezUlloa from '../assets/logo-grezulloa.png'
 
 /*
  * AgregarImagenCorporativa.jsx
@@ -29,12 +30,17 @@ function AgregarImagenCorporativa() {
       </Card.Header>
 
       {visible && (
-        <Image src={imagenCorporativa} alt="Imagen corporativa" fluid rounded />
+        <Image
+          src={logoGrezUlloa}
+          alt="Logo GrezUlloa Electricidad"
+          fluid
+          className="p-4"
+        />
       )}
 
       <Card.Body>
         <Card.Text className="text-muted">
-          Componente externo construido con la libreria react-bootstrap.
+          GrezUlloa Electricidad. Componente externo construido con la libreria react-bootstrap.
         </Card.Text>
         <Button
           variant={visible ? 'outline-secondary' : 'outline-primary'}
