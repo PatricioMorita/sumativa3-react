@@ -4,6 +4,7 @@ import TodoHeader from './components/TodoHeader'
 import AgregarTarea from './components/AgregarTarea'
 import TodoList from './components/TodoList'
 import ResumenTareas from './components/ResumenTareas'
+import AgregarImagenCorporativa from './components/AgregarImagenCorporativa'
 import TodoFooter from './components/TodoFooter'
 
 import './App.css'
@@ -70,6 +71,8 @@ function App() {
             />
 
             <ResumenTareas pendientes={pendientes} total={tareas.length} />
+
+            <AgregarImagenCorporativa />
           </div>
         </div>
       </main>
